@@ -1,6 +1,5 @@
-import React from 'react';
-import { Trophy, ChevronUp, ChevronDown, Minus } from 'lucide-react';
-import { GROUP_COLORS, TEAM_SHORT } from '../data/tournamentData';
+import { Trophy, ChevronUp, ChevronDown, Minus, Info } from 'lucide-react';
+import { GROUP_COLORS, TEAM_SHORT, TEAM_NICKNAMES } from '../data/tournamentData';
 
 export default function GroupStandings({ standings, qualified }) {
   const groups = Object.keys(standings).sort();
@@ -76,11 +75,18 @@ export default function GroupStandings({ standings, qualified }) {
 
                           {/* Team name */}
                           <td className="px-3 py-2.5">
-                            <div className="flex items-center gap-2">
-                              <span className="font-semibold text-gray-100 hidden sm:inline">{row.team}</span>
-                              <span className="font-semibold text-gray-100 sm:hidden">{TEAM_SHORT[row.team] || row.team}</span>
-                              {isQualified && (
-                                <span className="badge-qualified hidden sm:inline-block">Clasifica</span>
+                            <div>
+                              <div className="flex items-center gap-2">
+                                <span className="font-semibold text-gray-100 hidden sm:inline">{row.team}</span>
+                                <span className="font-semibold text-gray-100 sm:hidden">{TEAM_SHORT[row.team] || row.team}</span>
+                                {isQualified && (
+                                  <span className="badge-qualified hidden sm:inline-block">Clasifica</span>
+                                )}
+                              </div>
+                              {TEAM_NICKNAMES[row.team] && (
+                                <span className="text-[11px] text-red-400/90 italic block leading-tight">
+                                  {TEAM_NICKNAMES[row.team]}
+                                </span>
                               )}
                             </div>
                           </td>
@@ -134,6 +140,24 @@ export default function GroupStandings({ standings, qualified }) {
         <span className="flex items-center gap-1.5">
           <span className="w-3 h-3 rounded-full bg-gray-700" /> Eliminado
         </span>
+      </div>
+
+      {/* Glossary of abbreviations */}
+      <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-3 text-center">
+        <div className="flex items-center justify-center gap-1.5 text-xs text-gray-400 font-semibold mb-1.5">
+          <Info className="w-3.5 h-3.5 text-red-400" />
+          <span>Significado de las siglas:</span>
+        </div>
+        <p className="text-[11px] text-gray-400 flex flex-wrap justify-center gap-x-3 gap-y-1">
+          <span><strong className="text-gray-200">PJ:</strong> Partidos Jugados</span>
+          <span><strong className="text-gray-200">PG:</strong> Partidos Ganados</span>
+          <span><strong className="text-gray-200">PE:</strong> Partidos Empatados</span>
+          <span><strong className="text-gray-200">PP:</strong> Partidos Perdidos</span>
+          <span><strong className="text-gray-200">GF:</strong> Goles a Favor</span>
+          <span><strong className="text-gray-200">GC:</strong> Goles en Contra</span>
+          <span><strong className="text-gray-200">DIF:</strong> Diferencia de Goles</span>
+          <span><strong className="text-gray-200">PTS:</strong> Puntos</span>
+        </p>
       </div>
     </div>
   );

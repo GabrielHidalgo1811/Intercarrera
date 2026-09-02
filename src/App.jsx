@@ -1,21 +1,22 @@
 import React, { useState } from 'react';
-import { Trophy, Calendar, GitBranch, RotateCcw, Volleyball, Heart } from 'lucide-react';
+import { Trophy, Calendar, GitBranch, Volleyball, Heart, Award } from 'lucide-react';
 import useTournament from './hooks/useTournament';
 import GroupStandings from './components/GroupStandings';
 import MatchesView from './components/MatchesView';
 import KnockoutBracket from './components/KnockoutBracket';
 import VotingView from './components/VotingView';
+import PlayersView from './components/PlayersView';
 
 const TABS = [
-  { id: 'groups',   label: 'Grupos',    shortLabel: 'Grupos',   icon: Trophy },
-  { id: 'matches',  label: 'Partidos',  shortLabel: 'Partidos', icon: Calendar },
-  { id: 'knockout', label: 'Llaves',    shortLabel: 'Llaves',   icon: GitBranch },
-  { id: 'voting',   label: 'Votación',  shortLabel: 'Votar',    icon: Heart },
+  { id: 'groups',   label: 'Grupos',      shortLabel: 'Grupos',   icon: Trophy },
+  { id: 'matches',  label: 'Partidos',    shortLabel: 'Partidos', icon: Calendar },
+  { id: 'knockout', label: 'Llaves',      shortLabel: 'Llaves',   icon: GitBranch },
+  { id: 'players',  label: 'Goleadores',  shortLabel: 'Goles',    icon: Award },
+  { id: 'voting',   label: 'Votación',    shortLabel: 'Votar',    icon: Heart },
 ];
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('groups');
-  const [showReset, setShowReset] = useState(false);
 
   const {
     groupMatches,
@@ -25,13 +26,7 @@ export default function App() {
     champion,
     updateGroupMatch,
     updateKnockoutMatch,
-    resetTournament,
   } = useTournament();
-
-  const handleReset = () => {
-    resetTournament();
-    setShowReset(false);
-  };
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -48,38 +43,11 @@ export default function App() {
             </div>
           </div>
 
-          {/* Reset button */}
-          <div className="relative">
-            <button
-              onClick={() => setShowReset(!showReset)}
-              className="flex items-center gap-1.5 bg-white/10 hover:bg-white/20 px-3 py-2 rounded-lg text-sm font-medium transition-colors border border-white/10"
-              title="Restablecer torneo"
-            >
-              <RotateCcw className="w-4 h-4" />
-              <span className="hidden sm:inline">Restablecer</span>
-            </button>
-
-            {showReset && (
-              <div className="absolute right-0 top-full mt-2 bg-gray-800 rounded-xl shadow-xl border border-gray-700 p-4 z-50 w-64">
-                <p className="text-sm text-gray-200 font-medium mb-3">
-                  ¿Restablecer todos los resultados a los valores iniciales?
-                </p>
-                <div className="flex gap-2">
-                  <button
-                    onClick={handleReset}
-                    className="flex-1 bg-red-600 hover:bg-red-700 text-white text-sm font-semibold py-2 rounded-lg transition-colors"
-                  >
-                    Sí, restablecer
-                  </button>
-                  <button
-                    onClick={() => setShowReset(false)}
-                    className="flex-1 bg-gray-700 hover:bg-gray-600 text-gray-200 text-sm font-semibold py-2 rounded-lg transition-colors"
-                  >
-                    Cancelar
-                  </button>
-                </div>
-              </div>
-            )}
+          <div className="text-right">
+            <span className="inline-flex items-center gap-1.5 text-xs bg-red-800/50 text-red-200 border border-red-700/40 px-3 py-1.5 rounded-full font-medium">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              En juego
+            </span>
           </div>
         </div>
       </header>
@@ -131,6 +99,10 @@ export default function App() {
             updateKnockoutMatch={updateKnockoutMatch}
             champion={champion}
           />
+        )}
+
+        {activeTab === 'players' && (
+          <PlayersView />
         )}
 
         {activeTab === 'voting' && (
