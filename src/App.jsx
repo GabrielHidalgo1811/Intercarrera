@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
-import { Trophy, Calendar, GitBranch, RotateCcw, Volleyball } from 'lucide-react';
+import { Trophy, Calendar, GitBranch, RotateCcw, Volleyball, Heart } from 'lucide-react';
 import useTournament from './hooks/useTournament';
 import GroupStandings from './components/GroupStandings';
 import MatchesView from './components/MatchesView';
 import KnockoutBracket from './components/KnockoutBracket';
+import VotingView from './components/VotingView';
 
 const TABS = [
-  { id: 'groups',   label: 'Grupos',   shortLabel: 'Grupos',   icon: Trophy },
-  { id: 'matches',  label: 'Partidos', shortLabel: 'Partidos', icon: Calendar },
-  { id: 'knockout', label: 'Llaves',   shortLabel: 'Llaves',   icon: GitBranch },
+  { id: 'groups',   label: 'Grupos',    shortLabel: 'Grupos',   icon: Trophy },
+  { id: 'matches',  label: 'Partidos',  shortLabel: 'Partidos', icon: Calendar },
+  { id: 'knockout', label: 'Llaves',    shortLabel: 'Llaves',   icon: GitBranch },
+  { id: 'voting',   label: 'Votación',  shortLabel: 'Votar',    icon: Heart },
 ];
 
 export default function App() {
@@ -129,6 +131,10 @@ export default function App() {
             updateKnockoutMatch={updateKnockoutMatch}
             champion={champion}
           />
+        )}
+
+        {activeTab === 'voting' && (
+          <VotingView />
         )}
       </main>
 
