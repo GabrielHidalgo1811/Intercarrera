@@ -32,7 +32,7 @@ export default function App() {
     <div className="min-h-screen flex flex-col">
       {/* ─── Header ─── */}
       <header className="bg-gradient-to-r from-gray-900 via-red-900 to-gray-900 text-white shadow-lg border-b border-red-800/50">
-        <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+        <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="bg-red-700/40 p-2 rounded-xl border border-red-600/30">
               <Volleyball className="w-7 h-7 text-red-300" />
@@ -54,7 +54,7 @@ export default function App() {
 
       {/* ─── Tab Navigation ─── */}
       <nav className="bg-gray-900/90 backdrop-blur-sm border-b border-gray-700/50 shadow-sm sticky top-0 z-40">
-        <div className="max-w-5xl mx-auto px-4">
+        <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex">
             {TABS.map((tab) => {
               const Icon = tab.icon;
