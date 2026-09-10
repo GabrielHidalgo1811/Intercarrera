@@ -72,7 +72,7 @@ export const PLAYERS_DATA = {
     { name: 'Diego Hazard', goals: 3 },
     { name: 'Javier Valdivia', goals: 1 },
     { name: 'Juan Pablo Miranda', goals: 1 },
-    { name: 'Matías Molina', goals: 1 },
+    { name: 'Matías Molina', goals: 2 },
     { name: 'Benjamin Barros', goals: 0 },
     { name: 'Benjamin González', goals: 0 },
     { name: 'Cristóbal Cubillos', goals: 0 },
@@ -135,18 +135,18 @@ export const PLAYERS_DATA = {
     { name: 'Manuel Garrido', goals: 0 },
   ],
   'Psicología': [
+    { name: 'Maximiliano Bascur', goals: 4 },
+    { name: 'Milko Aviles', goals: 2 },
     { name: 'Mateo Díaz', goals: 1 },
-    { name: 'Maximiliano Bascur', goals: 1 },
+    { name: 'Jesús Rubio', goals: 1 },
     { name: 'Vicente Lopez', goals: 1 },
     { name: 'Cristóbal Pérez', goals: 0 },
     { name: 'Felipe Guerrero', goals: 0 },
     { name: 'Franco Riveros', goals: 0 },
-    { name: 'Jesús Rubio', goals: 0 },
     { name: 'Jorshua troncoso', goals: 0 },
     { name: 'Martín Miranda', goals: 0 },
-    { name: 'Milko Aviles', goals: 0 },
     { name: 'Rodrigo Chacón', goals: 0 },
-    { name: 'Sebastián Campos', goals: 0 },
+    { name: 'Sebastián Campos', goals: 1 },
   ],
   'Ing Civil Informática': [
     { name: 'Pablo Jatib', goals: 1 },
@@ -166,10 +166,11 @@ export const PLAYERS_DATA = {
     { name: 'Bryan Rivera', goals: 0 },
     { name: 'Cristobal Rojo', goals: 0 },
     { name: 'Daniel Plaza', goals: 0 },
-    { name: 'Francisco padilla', goals: 0 },
+    { name: 'Francisco Ibañez', goals: 1 },
+    { name: 'Francisco Padilla', goals: 1 },
     { name: 'Javier correa', goals: 0 },
     { name: 'Jeshua nuñez', goals: 0 },
-    { name: 'Luciano sepulveda', goals: 0 },
+    { name: 'Luciano Sepulveda', goals: 2 },
     { name: 'Matias Ponce', goals: 0 },
     { name: 'Nicolas Fuentes', goals: 0 },
     { name: 'Victor Vergara', goals: 0 },
@@ -189,7 +190,7 @@ export const PLAYERS_DATA = {
     { name: 'Víctor Lillo', goals: 0 },
   ],
   'Derecho': [
-    // Plantel pendiente de registro por parte de la organización
+    { name: 'Yrome Champions', goals: 2 },
   ],
 };
 
@@ -214,11 +215,11 @@ export const INITIAL_GROUP_MATCHES = [
   { id: 5,  date: 'Miércoles 02 Sep', time: '12:00', group: 'B', home: 'Ing Control de Gestión', away: 'Ing Civil Química',     homeScore: 5,    awayScore: 3    },
   { id: 6,  date: 'Miércoles 02 Sep', time: '13:00', group: 'D', home: 'Kinesiología',           away: 'Periodismo',            homeScore: 9,    awayScore: 0    },
   // Fecha 4 — Viernes 04 Sep
-  { id: 7,  date: 'Viernes 04 Sep',   time: '12:00', group: 'A', home: 'Psicología',             away: 'Derecho',               homeScore: null, awayScore: null },
-  { id: 8,  date: 'Viernes 04 Sep',   time: '13:00', group: 'C', home: 'Enfermería',             away: 'Ing Comercial',         homeScore: null, awayScore: null },
+  { id: 7,  date: 'Viernes 04 Sep',   time: '12:00', group: 'A', home: 'Psicología',             away: 'Derecho',               homeScore: 7,    awayScore: 2    },
+  { id: 8,  date: 'Viernes 04 Sep',   time: '13:00', group: 'C', home: 'Enfermería',             away: 'Ing Comercial',         homeScore: 2,    awayScore: 9    },
   // Fecha 5 — Miércoles 09 Sep
-  { id: 9,  date: 'Miércoles 09 Sep', time: '12:00', group: 'A', home: 'Derecho',                away: 'Química y Farmacia',    homeScore: null, awayScore: null },
-  { id: 10, date: 'Miércoles 09 Sep', time: '13:00', group: 'C', home: 'Ing Comercial',          away: 'Administración Pública',homeScore: null, awayScore: null },
+  { id: 9,  date: 'Miércoles 09 Sep', time: '12:00', group: 'A', home: 'Derecho',                away: 'Química y Farmacia',    homeScore: 8,    awayScore: 4    },
+  { id: 10, date: 'Miércoles 09 Sep', time: '13:00', group: 'C', home: 'Ing Comercial',          away: 'Administración Pública',homeScore: 3,    awayScore: 2    },
   // Fecha 6 — Viernes 11 Sep
   { id: 11, date: 'Viernes 11 Sep',   time: '12:00', group: 'B', home: 'Publicidad',             away: 'Ing Control de Gestión',homeScore: null, awayScore: null },
   { id: 12, date: 'Viernes 11 Sep',   time: '13:00', group: 'D', home: 'Ing Civil Informática',  away: 'Periodismo',            homeScore: null, awayScore: null },
