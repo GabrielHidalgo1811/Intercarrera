@@ -224,16 +224,16 @@ export const INITIAL_GROUP_MATCHES = [
   { id: 10, date: 'Miércoles 09 Sep', time: '13:00', group: 'C', home: 'Ing Comercial',          away: 'Administración Pública',homeScore: 3,    awayScore: 2    },
   // Fecha 6 — Viernes 11 Sep
   { id: 11, date: 'Viernes 11 Sep',   time: '12:00', group: 'B', home: 'Publicidad',             away: 'Ing Control de Gestión',homeScore: 5,    awayScore: 8    },
-  { id: 12, date: 'Viernes 11 Sep',   time: '13:00', group: 'D', home: 'Ing Civil Informática',  away: 'Periodismo',            homeScore: null, awayScore: null },
+  { id: 12, date: 'Martes 22 Sep',    time: '14:00', group: 'D', home: 'Ing Civil Informática',  away: 'Periodismo',            homeScore: null, awayScore: null },
 ];
 
 // Estructura de cruces eliminatorios
 export const KNOCKOUT_STRUCTURE = {
   quarterFinals: [
     { id: 'QF1', label: 'QF1', date: 'Miércoles 23 Sep', time: '12:00', homeSeed: '1A', awaySeed: '2B', home: null, away: null, homeScore: null, awayScore: null, homePen: null, awayPen: null },
-    { id: 'QF2', label: 'QF2', date: 'Miércoles 23 Sep', time: '13:00', homeSeed: '1C', awaySeed: '2D', home: null, away: null, homeScore: null, awayScore: null, homePen: null, awayPen: null },
+    { id: 'QF2', label: 'QF2', date: 'Miércoles 23 Sep', time: '13:00', homeSeed: '1D', awaySeed: '2C', home: null, away: null, homeScore: null, awayScore: null, homePen: null, awayPen: null },
     { id: 'QF3', label: 'QF3', date: 'Viernes 25 Sep',   time: '12:00', homeSeed: '1B', awaySeed: '2A', home: null, away: null, homeScore: null, awayScore: null, homePen: null, awayPen: null },
-    { id: 'QF4', label: 'QF4', date: 'Viernes 25 Sep',   time: '13:00', homeSeed: '1D', awaySeed: '2C', home: null, away: null, homeScore: null, awayScore: null, homePen: null, awayPen: null },
+    { id: 'QF4', label: 'QF4', date: 'Viernes 25 Sep',   time: '13:00', homeSeed: '1C', awaySeed: '2D', home: null, away: null, homeScore: null, awayScore: null, homePen: null, awayPen: null },
   ],
   semiFinals: [
     { id: 'SF1', label: 'SF1', date: 'Miércoles 30 Sep', time: '12:00', homeFrom: 'QF1', awayFrom: 'QF2', home: null, away: null, homeScore: null, awayScore: null, homePen: null, awayPen: null },
