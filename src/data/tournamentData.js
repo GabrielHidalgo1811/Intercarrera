@@ -83,10 +83,10 @@ export const PLAYERS_DATA = {
     { name: 'Tomás Gómez', goals: 0 },
   ],
   'Publicidad': [
-    { name: 'Ismael Villegas', goals: 1 },
+    { name: 'Ismael Villegas', goals: 5 },
     { name: 'Luis Medina', goals: 1 },
     { name: 'Lukas Espinoza', goals: 1 },
-    { name: 'Alonso Lizana', goals: 0 },
+    { name: 'Alonso Lizana', goals: 1 },
     { name: 'Bruno Vargas', goals: 0 },
     { name: 'Cristobal Lloncón', goals: 0 },
     { name: 'Gabriel Jara', goals: 0 },
@@ -221,7 +221,7 @@ export const INITIAL_GROUP_MATCHES = [
   { id: 9,  date: 'Miércoles 09 Sep', time: '12:00', group: 'A', home: 'Derecho',                away: 'Química y Farmacia',    homeScore: 8,    awayScore: 4    },
   { id: 10, date: 'Miércoles 09 Sep', time: '13:00', group: 'C', home: 'Ing Comercial',          away: 'Administración Pública',homeScore: 3,    awayScore: 2    },
   // Fecha 6 — Viernes 11 Sep
-  { id: 11, date: 'Viernes 11 Sep',   time: '12:00', group: 'B', home: 'Publicidad',             away: 'Ing Control de Gestión',homeScore: null, awayScore: null },
+  { id: 11, date: 'Viernes 11 Sep',   time: '12:00', group: 'B', home: 'Publicidad',             away: 'Ing Control de Gestión',homeScore: 5,    awayScore: 8    },
   { id: 12, date: 'Viernes 11 Sep',   time: '13:00', group: 'D', home: 'Ing Civil Informática',  away: 'Periodismo',            homeScore: null, awayScore: null },
 ];
 
