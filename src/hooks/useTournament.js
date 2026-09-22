@@ -5,7 +5,7 @@ import {
   KNOCKOUT_STRUCTURE,
 } from '../data/tournamentData';
 
-const STORAGE_KEY = 'futsal-torneo-data-v2';
+const STORAGE_KEY = 'futsal-torneo-data-v3';
 
 // Deep-clone utility
 function deepClone(obj) {
