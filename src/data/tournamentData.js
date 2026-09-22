@@ -151,7 +151,7 @@ export const PLAYERS_DATA = {
     { name: 'Sebastián Campos', goals: 1 },
   ],
   'Ing Civil Informática': [
-    { name: 'Pablo Jatib', goals: 1 },
+    { name: 'Pablo Jatib', goals: 9 },
     { name: 'Alejandro Del Río', goals: 0 },
     { name: 'Alonso Cornejo', goals: 0 },
     { name: 'Benjamín Contreras', goals: 0 },
@@ -224,7 +224,9 @@ export const INITIAL_GROUP_MATCHES = [
   { id: 10, date: 'Miércoles 09 Sep', time: '13:00', group: 'C', home: 'Ing Comercial',          away: 'Administración Pública',homeScore: 3,    awayScore: 2    },
   // Fecha 6 — Viernes 11 Sep
   { id: 11, date: 'Viernes 11 Sep',   time: '12:00', group: 'B', home: 'Publicidad',             away: 'Ing Control de Gestión',homeScore: 5,    awayScore: 8    },
-  { id: 12, date: 'Martes 22 Sep',    time: '14:00', group: 'D', home: 'Ing Civil Informática',  away: 'Periodismo',            homeScore: null, awayScore: null },
+  { id: 12, date: 'Martes 22 Sep',    time: '14:00', group: 'D', home: 'Ing Civil Informática',  away: 'Periodismo',            homeScore: 12,   awayScore: 4    },
+  { id: 13, date: 'Miércoles 24 Sep', time: '13:00', group: 'C', home: 'Ing Comercial',          away: 'Ing Civil Informática', homeScore: null, awayScore: null },
+  { id: 14, date: 'Viernes 26 Sep',   time: '13:00', group: 'D', home: 'Kinesiología',           away: 'Administración Pública',homeScore: null, awayScore: null },
 ];
 
 // Estructura de cruces eliminatorios
