@@ -239,8 +239,8 @@ export const KNOCKOUT_STRUCTURE = {
     { id: 'QF4', label: 'QF4', date: 'Miércoles 23 Sep', time: '13:00', homeSeed: '1C', awaySeed: '2D', home: 'Ing Comercial', away: 'Ing Civil Informática', homeScore: 5, awayScore: 7, homePen: null, awayPen: null },
   ],
   semiFinals: [
-    { id: 'SF1', label: 'SF1', date: 'Miércoles 30 Sep', time: '12:00', homeFrom: 'QF1', awayFrom: 'QF2', home: null, away: null, homeScore: null, awayScore: null, homePen: null, awayPen: null },
-    { id: 'SF2', label: 'SF2', date: 'Miércoles 30 Sep', time: '13:00', homeFrom: 'QF3', awayFrom: 'QF4', home: null, away: null, homeScore: null, awayScore: null, homePen: null, awayPen: null },
+    { id: 'SF1', label: 'SF1', date: 'Miércoles 30 Sep', time: '13:00', homeFrom: 'QF1', awayFrom: 'QF2', home: null, away: null, homeScore: null, awayScore: null, homePen: null, awayPen: null },
+    { id: 'SF2', label: 'SF2', date: 'Miércoles 30 Sep', time: '12:00', homeFrom: 'QF3', awayFrom: 'QF4', home: null, away: null, homeScore: null, awayScore: null, homePen: null, awayPen: null },
   ],
   thirdPlace: { id: '3RD', label: '3er Puesto', date: 'Viernes 02 Oct', time: '12:00', homeFrom: 'SF1-loser', awayFrom: 'SF2-loser', home: null, away: null, homeScore: null, awayScore: null, homePen: null, awayPen: null },
   final:      { id: 'FINAL', label: 'Gran Final', date: 'Viernes 02 Oct', time: '13:00', homeFrom: 'SF1', awayFrom: 'SF2', home: null, away: null, homeScore: null, awayScore: null, homePen: null, awayPen: null },
