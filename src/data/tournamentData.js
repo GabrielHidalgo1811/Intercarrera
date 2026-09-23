@@ -234,9 +234,9 @@ export const INITIAL_GROUP_MATCHES = [
 export const KNOCKOUT_STRUCTURE = {
   quarterFinals: [
     { id: 'QF1', label: 'QF1', date: 'Miércoles 23 Sep', time: '12:00', homeSeed: '1A', awaySeed: '2B', home: 'Psicología', away: 'Ing Civil Química', homeScore: 5, awayScore: 4, homePen: null, awayPen: null },
-    { id: 'QF2', label: 'QF2', date: 'Miércoles 23 Sep', time: '13:00', homeSeed: '1D', awaySeed: '2C', home: 'Ing Civil Informática', away: 'Ing Comercial', homeScore: 7, awayScore: 5, homePen: null, awayPen: null },
+    { id: 'QF2', label: 'QF2', date: 'Viernes 25 Sep',   time: '12:00', homeSeed: '1D', awaySeed: '2C', home: null, away: null, homeScore: null, awayScore: null, homePen: null, awayPen: null },
     { id: 'QF3', label: 'QF3', date: 'Viernes 25 Sep',   time: '12:00', homeSeed: '1B', awaySeed: '2A', home: null, away: null, homeScore: null, awayScore: null, homePen: null, awayPen: null },
-    { id: 'QF4', label: 'QF4', date: 'Viernes 25 Sep',   time: '13:00', homeSeed: '1C', awaySeed: '2D', home: null, away: null, homeScore: null, awayScore: null, homePen: null, awayPen: null },
+    { id: 'QF4', label: 'QF4', date: 'Miércoles 23 Sep', time: '13:00', homeSeed: '1C', awaySeed: '2D', home: 'Ing Comercial', away: 'Ing Civil Informática', homeScore: 5, awayScore: 7, homePen: null, awayPen: null },
   ],
   semiFinals: [
     { id: 'SF1', label: 'SF1', date: 'Miércoles 30 Sep', time: '12:00', homeFrom: 'QF1', awayFrom: 'QF2', home: null, away: null, homeScore: null, awayScore: null, homePen: null, awayPen: null },
